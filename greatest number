@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+#include<stdio.h>
+class greatest
+{int a;
+int b;
+int c;
+public:
+	void getdata()
+	{cout<<"enter the three numbers";
+	cin>>a>>b>>c;
+	}
+	void display()
+	{
+	if (a>b&&a>c)
+	{
+	cout<<"the greatest number="<<a<<endl;
+	}
+	else if(b>a&&b>c)
+	{cout<<"the greatest number is ="<<b<<endl;
+	}
+	else
+	cout<<"the greatest number is="<<c<<endl;
+	
+	
+	}
+	
+};
+int main()
+{ greatest g1;
+g1.getdata();
+g1.display();
+return 0;
+
+}
